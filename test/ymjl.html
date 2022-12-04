@@ -74,6 +74,7 @@
     alldaysinmonth = '<img src="ymjl4.png" style="width:100%; margin-top:-1.2%"><p style="position: absolute; margin-top:-12.9%; margin-left:57.5%; font-family: Arial, Helvetica, sans-serif; font-size:0.96rem">'+str+'</p>';
     current.subtract(1,'days');
     while (endMoment.isBefore(current,'day')) {
+        var l = random(13,19);var i = random(9, 19); var j = random(1,59); var k = random(1,59);
         str = current.format('YYYY-MM-DD') + " " + l + ((j < 10) ? ":0" : ":") + j + ((k < 10) ? ":0" : ":") + k;
         alldaysinmonth += '<img src="ymjl4.png" style="width:100%; margin-top:-1.2%"><p style="position: absolute; margin-top:-12.9%; margin-left:57.5%; font-family: Arial, Helvetica, sans-serif; font-size:0.96rem">'+str+'</p>';
         current.subtract(1,'days');
